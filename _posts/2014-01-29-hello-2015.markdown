@@ -1,8 +1,8 @@
 ---
 layout:     post
 title:      "Hello 2015"
-subtitle:   " \"Hello World, Hello My Blog\""
-date:       2016-05-24 15:52:00
+subtitle:   " \"Hello World, Hello Blog\""
+date:       2016-05-24 20:48:26
 author:     "Wendy"
 header-img: "img/post-bg-2015.jpg"
 catalog: true
@@ -10,14 +10,16 @@ tags:
     - 生活
 ---
 
-> “ Nothing’s gonna change my love for my life. ”
+> “Yeah It's on. ”
 
 
 ## 前言
 
 Wendy 的 Blog 就这么开通了。
 
-[跳过废话，直接看技术实现](#build) 
+[跳过废话，直接看技术实现 ](#build) 
+
+
 
 
 2016 年，Wendy 找到了一个可以写点东西的地方了。生活的琐事也好，阅读的书籍也好，get的新技能也好。
