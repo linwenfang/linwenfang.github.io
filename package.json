@@ -1,14 +1,14 @@
 {
-    "name": "hux-blog",
-    "title": "Hux Blog",
-    "author": "Hux <huxpro@gmail.com>",
+    "name": "Wendy-blog",
+    "title": "Wendy Blog",
+    "author": "Wendy <linwenfang99@163.com>",
     "version": "1.6.0",
-    "homepage": "http://huxpro.github.io",
+    "homepage": "http://linwenfang.github.io",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Huxpro/huxpro.github.io"
+        "url": "https://github.com/linwenfang/liwenfang.github.io"
     },
-    "bugs": "https://github.com/Huxpro/huxpro.github.io/issues",
+    "bugs": "https://github.com/linwenfang/linwenfang.github.io/issues",
     "devDependencies": {
         "grunt": "~0.4.5",
         "grunt-contrib-less": "~0.11.4",
