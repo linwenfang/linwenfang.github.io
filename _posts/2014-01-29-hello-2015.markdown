@@ -33,11 +33,11 @@ Wendy 的 Blog 就这么开通了。
 
 ## 正文
 
-    自己本身就是个小白，在今年四月份第一次听说github这个神奇的网站后，就开始探索这片神奇的土地。既然研究生要好好学习前、后端的知识，索性的从github上搭建博客开始吧。
+自己本身就是个小白，在今年四月份第一次听说github这个神奇的网站后，就开始探索这片神奇的土地。既然研究生要好好学习前、后端的知识，索性的从github上搭建博客开始吧。
 
-    整个搭建过程是参考[使用GitHub Pages搭建博客](http://my.oschina.net/wangxnn/blog/499854?fromerr=ebi0qd1m) +[使用SSH密钥连接Github【图文教程】](http://www.xuanfengge.com/using-ssh-key-link-github-photo-tour.html) 来学习的。
+整个搭建过程是参考[使用GitHub Pages搭建博客](http://my.oschina.net/wangxnn/blog/499854?fromerr=ebi0qd1m) +[使用SSH密钥连接Github【图文教程】](http://www.xuanfengge.com/using-ssh-key-link-github-photo-tour.html) 来学习的。
 
-    搭建博客的代码是从[Hux 黄玄](https://github.com/Huxpro/huxpro.github.io) 扒过来的。谢谢这些大神们的技术支持，让我这个小白终于有了自己的一片天空。
+搭建博客的代码是从[Hux 黄玄](https://github.com/Huxpro/huxpro.github.io) 扒过来的。谢谢这些大神们的技术支持，让我这个小白终于有了自己的一片天空。
 
 
 
