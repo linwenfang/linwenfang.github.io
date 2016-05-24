@@ -7,10 +7,10 @@ author:     "Wendy"
 header-img: "img/post-bg-2015.jpg"
 catalog: true
 tags:
-    - Dailylife
+    - 生活
 ---
 
-> “Nothing’s gonna change my love for my life. ”
+> “ Nothing’s gonna change my love for my life. ”
 
 
 ## 前言
