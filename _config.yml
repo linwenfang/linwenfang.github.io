@@ -83,7 +83,7 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Friends
 friends: [
     {
-        title: "穷酸的没朋友...",
+        title: "穷酸到没朋友...",
         href: "http://linwenfang.github.io"
     }
 ]
