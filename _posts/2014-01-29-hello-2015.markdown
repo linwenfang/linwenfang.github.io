@@ -2,8 +2,8 @@
 layout:     post
 title:      "Hello 2015"
 subtitle:   " \"Hello World, Hello Blog\""
-date:       2015-01-29 12:00:00
-author:     "Hux"
+date:       2016-05-24 20:48:26
+author:     "Wendy"
 header-img: "img/post-bg-2015.jpg"
 catalog: true
 tags:
@@ -15,18 +15,18 @@ tags:
 
 ## 前言
 
-Hux 的 Blog 就这么开通了。
+Wendy 的 Blog 就这么开通了。
 
-[跳过废话，直接看技术实现 ](#build) 
+[跳过废话，直接看技术实现](#build) 
 
-
-
-2015 年，Hux 总算有个地方可以好好写点东西了。
+2016 年，Wendy 终于找到一个可以写点东西的地方了。生活的琐事也好，阅读的书籍也好，get的新技能也好。
 
 
-作为一个程序员， Blog 这种轮子要是挂在大众博客程序上就太没意思了。一是觉得大部分 Blog 服务都太丑，二是觉得不能随便定制不好玩。之前因为太懒没有折腾，结果就一直连个写 Blog 的地儿都没有。
+去年八月份到十二月份期间，全身心的投入到考研大军，接着又是初试——预面试——复试——面试的繁琐流程，然后做毕设。现在一切都已经搞定了，可以安静下来好好学习技术了。
 
-在玩了一段时间知乎之后，答题的快感又激起了我开博客的冲动。之前的[个人网站](http://huangxuan.me/portfolio)是作品集形式的（现在集成进来了），并不适合用来写博文，一不做二不休，花一天搞一个吧！
+
+说自己是一名程序员，可能还不够格吧...
+
 
 
 <p id = "build"></p>
@@ -34,49 +34,119 @@ Hux 的 Blog 就这么开通了。
 
 ## 正文
 
-接下来说说搭建这个博客的技术细节。  
+自己本身就是个小白，在四月份第一次听说github这个神奇的网站后，就开始探索这片神奇的土地。既然研究生要好好学习前、后端的知识，索性的从github上搭建博客开始吧。
 
-正好之前就有关注过 [GitHub Pages](https://pages.github.com/) + [Jekyll](http://jekyllrb.com/) 快速 Building Blog 的技术方案，非常轻松时尚。
+整个搭建过程是参考[使用GitHub Pages搭建博客](http://my.oschina.net/wangxnn/blog/499854?fromerr=ebi0qd1m) +[使用SSH密钥连接Github【图文教程】](http://www.xuanfengge.com/using-ssh-key-link-github-photo-tour.html) 来学习的。
 
-其优点非常明显：
-
-* **Markdown** 带来的优雅写作体验
-* 非常熟悉的 Git workflow ，**Git Commit 即 Blog Post**
-* 利用 GitHub Pages 的域名和免费无限空间，不用自己折腾主机
-	* 如果需要自定义域名，也只需要简单改改 DNS 加个 CNAME 就好了 
-* Jekyll 的自定制非常容易，基本就是个模版引擎
-
-
-本来觉得最大的缺点可能是 GitHub 在国内访问起来太慢，所以第二天一起床就到 GitCafe(Chinese GitHub Copy) 迁移了一个[镜像](http://huxpro.gitcafe.io)出来，结果还是巨慢。
-
-哥哥可是个前端好嘛！ 果断开 Chrome DevTool 查了下网络请求，原来是 **pending 在了 Google Fonts** 上，页面渲染一直被阻塞到请求超时为止，难怪这么慢。  
-忍痛割爱，只好把 Web Fonts 去了（反正超时看到的也只能是 fallback ），果然一下就正常了，而且 GitHub 和 GitCafe 对比并没有感受到明显的速度差异，虽然 github 的 ping 值明显要高一些，达到了 300ms，于是用 DNSPOD 优化了一下速度。
-
-
+搭建博客的代码是从[Hux 黄玄](https://github.com/Huxpro/huxpro.github.io) 扒过来的。谢谢这些大神们的技术支持，让我这个小白终于有了自己的一片天空。
 
 ---
 
-配置的过程中也没遇到什么坑，基本就是 Git 的流程，相当顺手
+以下过程是以Window7环境为例的，采用的是Git Bash终端来操作。
 
-大的 Jekyll 主题上直接 fork 了 Clean Blog（这个主题也相当有名，就不多赘述了。唯一的缺点大概就是没有标签支持，于是我给它补上了。）
+* **第一步 创建一个新仓库** 
 
-本地调试环境需要 `gem install jekyll`，结果 rubygem 的源居然被墙了……后来手动改成了我大淘宝的镜像源才成功
+<img src="https://github.com/linwenfang/blogphoto/blob/master/s1.png" width="350" height="200"/>
 
-Theme 的 CSS 是基于 Bootstrap 定制的，看得不爽的地方直接在 Less 里改就好了（平时更习惯 SCSS 些），**不过其实我一直觉得 Bootstrap 在移动端的体验做得相当一般，比我在淘宝参与的团队 CSS 框架差多了……**所以为了体验，也补了不少 CSS 进去
+按照图片中所示的内容填写即可，linwenfang改成自己的用户名，Description中可以填写一些描述。
 
-最后就进入了耗时反而最长的**做图、写字**阶段，也算是进入了**写博客**的正轨，因为是类似 Hack Day 的方式去搭这个站的，所以折腾折腾着大半夜就过去了。
+* 值得注意的是，Repository name里必须填写linwenfang.github.io，这种 用户名.github.io的格式。
 
-第二天考虑中文字体的渲染，fork 了 [Type is Beautiful](http://www.typeisbeautiful.com/) 的 `font` CSS，调整了字号，适配了 Win 的渣渲染，中英文混排效果好多了。
+
+* **第二步 安装Git客户端** 
+
+Git的版本很多，可以直接从官网上下载，[下载地址](https://git-scm.com/download/) 大家根据电脑的版本自行下载吧。
+
+* **第三步 配置信息** 
+
+打开刚刚安装的Git Hash，开始键入以下信息：
+
+* $git config --global user.name "You Name"
+* $git config --global user.email linwenfang99@163.com
+
+这里的配置信息中的用户名和用户邮箱，在后面 GitHub 中会用到，尽力准确配置，就用你的用户名和你常用的邮箱即可。
+
+* **第四步 查看是否存在GitHub SSH密钥** 
+
+Git Bash 下键入命令：
+
+* $cd ~/.ssh#
+
+检查你本机用户home目录下是否存在.ssh目录，如果不存在此目录，则进行第五步。否则，你本机已经存在公钥和私钥，可以直接进行第六步。
+
+* **第五步 创建一对新的GitHub SSH密钥** 
+
+* $ssh-keygen -t rsa -C “linwenfang99@163.com”
+这将按照你提供的邮箱地址，创建一对密钥
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/you/.ssh/id_rsa): [Press enter]
+直接回车，则将密钥按默认文件进行存储。此时也可以输入特定的文件名，比如/c/Users/you/.ssh/github_rsa
+
+接着，根据提示，你需要输入密码和确认密码（说到这里，如果你很放心，其实可以不用密码，就是到输密码的地方，都直接回车，所以每次push就只管回车就行了。所谓的最安全的密码，就是没有密码  – –  哈哈）。相关提示如下：
+
+Enter passphrase (empty for no passphrase): [Type a passphrase]
+Enter same passphrase again: [Type passphrase again]
+
+输入完成之后，屏幕会显示如下信息：
+
+Your identification has been saved in /c/Users/you/.ssh/id_rsa.
+Your public key has been saved in /c/Users/you/.ssh/id_rsa.pub.
+The key fingerprint is:
+01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db linwenfang99@163.com
+
+* **第六步 在GitHub账户中添加你的公钥** 
+运行以下命令，将公钥复制到系统粘贴板中：
+* $clip < ~/.ssh/id_rsa.pub
+
+接着：
+登录GitHub——>右上角你的头像处Settings——>SSH and GPG keys——>New SSH key,将key粘贴进去即可，title不用写。点击add key完成。
+
+* **第七步 测试SSH** 
+
+为了确认我们可以通过SSH连接GitHub，我们输入下面命令。输入后，会要求我们提供验证密码，输入之前创建的密码就ok了。
+
+* $ssh -T git@github.com
+
+
+你可能会看到告警信息，如下：
+
+The authenticity of host 'github.com (207.97.227.239)' can't be established.
+RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
+Are you sure you want to continue connecting (yes/no)?
+
+不用担心，直接输入yes。
+
+如果看到下面信息，就说明一切完美，大功告成！
+
+Hi username! You’ve successfully authenticated, but GitHub does not provide shell access.
+
+* **第八步 建立自己网站** 
+
+把仓库拉到本地
+* $git clone git@github.com:linwenfang/linwenfang.github.io.git
+
+建立index.html文件
+* $cd unclechen.github.io/
+* $echo "Hello World" > index.html
+
+提交到GitHub服务器 
+* $git add .
+* $git commit -a -m "my fisrt blog"
+* $git push
+
+当然你也可以在本地更改程序，改好后直接进行提交到GitHub服务器这一步即可。
+
+* **到此为止，就建好你的网站了，这个时候打开你的网站http://linwenfang.github.io就可以看到你的主页了，是不是很激动！** 
+
+---
+
+我的博客是参考的[Hux 黄玄](https://github.com/Huxpro/huxpro.github.io) ，大家也可以用他的程序进行自我修改，或者在github上搜索blog github，能搜出来很多模版。
 
 
 ## 后记
 
-回顾这个博客的诞生，纯粹是出于个人兴趣。在知乎相关问题上回答并获得一定的 star 后，我决定把这个博客主题当作一个小小的开源项目来维护。
+花费了两天的时间从0到1，从无到有，还是蛮激动的！
 
-在经历 v1.0 - v1.5 的蜕变后，这个博客主题愈发完整，不但增加了诸多 UI 层的优化（opinionated）；在代码层面，更加丰富的配置项也使得这个主题拥有了更好的灵活性与可拓展性。而作为一个开源项目，我也积极的为其完善文档与解决 issue。
-
-如果你恰好逛到了这里，希望你也能喜欢这个博客主题。
-
-—— Hux 后记于 2015.10
+—— Wendy , 2016.5
 
 
