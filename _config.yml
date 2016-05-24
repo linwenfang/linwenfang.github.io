@@ -1,12 +1,12 @@
 # Site settings
 title: Wendy Blog
-SEOTitle: 林文芳 | Wendy Blog
+SEOTitle: 林文芳的博客 | Wendy Blog
 header-img: img/home-bg.jpg
-email: huxpro@gmail.com
-description: "My first blog"
-keyword: "blog"
+email: linwenfang99@163.com
+description: "关于前端与设计、服务器端与伪画家 | 林文芳，Web Lover，Front-End Engineer，UX Designer | 这里是 林文芳 的个人博客，与你一起发现更大的世界。"
+keyword: "林文芳 个人网站 互联网 前端 H5 PHP 博客 @Ba-BLinnnnn"
 url: "http://linwenfang.github.io"              # your host, for absolute URL
-baseurl: "/"         # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
@@ -15,8 +15,9 @@ RSS: false
 weibo_username:     Ba-BLinnnnn
 zhihu_username:     Ba-BLinnnnn
 github_username:    linwenfang
-#twitter_username:  sorry
-facebook_username:  sorry
+#twitter_username:  huxpro
+#facebook_username:  huxpro
+# linkedin_username:  firstname-lastname-idxxxx
 
 
 
@@ -25,7 +26,7 @@ facebook_username:  sorry
 highlighter: rouge
 permalink: pretty
 paginate: 10
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
 
@@ -82,7 +83,6 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Friends
 friends: [
     {
-        title: "暂时还没朋友..",
+       title: "暂时还没朋友..",
         href: "http://linwenfang.github.io"
-    }
 ]
