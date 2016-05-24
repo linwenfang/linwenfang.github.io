@@ -2,7 +2,7 @@
 layout:     post
 title:      "Hello 2015"
 subtitle:   " \"Hello World, Hello Blog\""
-date:       2016-01-29 12:00:00
+date:       2016-05-24 23:00:00
 author:     "Wendy"
 header-img: "img/post-bg-2015.jpg"
 catalog: true
@@ -156,7 +156,7 @@ Hi username! You’ve successfully authenticated, but GitHub does not provide sh
 
 我的博客是参考的[Hux 黄玄](https://github.com/Huxpro/huxpro.github.io) ，大家也可以用他的程序进行自我修改，或者在github上搜索blog github，能搜出来很多模版。
 
----
+
 ## 后记
 
 花费了两天的时间从0到1，从无到有，还是蛮激动的！
