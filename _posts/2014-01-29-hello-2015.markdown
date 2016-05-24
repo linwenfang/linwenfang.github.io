@@ -2,7 +2,7 @@
 layout:     post
 title:      "Hello 2015"
 subtitle:   " \"Hello World, Hello Blog\""
-date:       2015-01-29 12:00:00
+date:       2016-01-29 12:00:00
 author:     "Wendy"
 header-img: "img/post-bg-2015.jpg"
 catalog: true
@@ -40,24 +40,25 @@ Wendy 的 Blog 就这么开通了。
 
 搭建博客的代码是从[Hux 黄玄](https://github.com/Huxpro/huxpro.github.io) 扒过来的。谢谢这些大神们的技术支持，让我这个小白终于有了自己的一片天空。
 
----
+
 
 以下过程是以Window7环境为例的，采用的是Git Bash终端来操作。
 
 **第一步 创建一个新仓库** 
 
-<img src="http://a2.qpic.cn/psb?/V130amVh2wDrOu/6P*LuCtpNBLrSR3nnCSg50qEnGkIss2hSMVLgNVZgCo!/b/dP0AAAAAAAAA&bo=FgNjAgAAAAADB1Y!&rf=viewer_4" width="350" height="200"/>
+<img src="http://image.baidu.com/detail/newindex?col=&tag=&pn=0&pid=33949323519&aid=400297513&user_id=49224710&setid=-1&sort=0&newsPn=&star=&fr=&from=2" width="350" height="200"/>
 
 
 按照图片中所示的内容填写即可，linwenfang改成自己的用户名，Description中可以填写一些描述。
 
 * 值得注意的是，Repository name里必须填写linwenfang.github.io，这种 用户名.github.io的格式。
 
----
+
 **第二步 安装Git客户端** 
 
 Git的版本很多，可以直接从官网上下载，[下载地址](https://git-scm.com/download/) 大家根据电脑的版本自行下载吧。
----
+
+
 
 **第三步 配置信息** 
 
@@ -67,7 +68,7 @@ Git的版本很多，可以直接从官网上下载，[下载地址](https://git
 * $git config --global user.email linwenfang99@163.com
 
 这里的配置信息中的用户名和用户邮箱，在后面 GitHub 中会用到，尽力准确配置，就用你的用户名和你常用的邮箱即可。
----
+
 
 **第四步 查看是否存在GitHub SSH密钥** 
 
@@ -76,7 +77,7 @@ Git Bash 下键入命令：
 * $cd ~/.ssh#
 
 检查你本机用户home目录下是否存在.ssh目录，如果不存在此目录，则进行第五步。否则，你本机已经存在公钥和私钥，可以直接进行第六步。
----
+
 
 **第五步 创建一对新的GitHub SSH密钥** 
 
@@ -101,7 +102,7 @@ Your public key has been saved in /c/Users/you/.ssh/id_rsa.pub.
 The key fingerprint is:
 01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db linwenfang99@163.com
 
----
+
 **第六步 在GitHub账户中添加你的公钥** 
 运行以下命令，将公钥复制到系统粘贴板中：
 
@@ -109,7 +110,7 @@ The key fingerprint is:
 
 接着：
 登录GitHub——>右上角你的头像处Settings——>SSH and GPG keys——>New SSH key,将key粘贴进去即可，title不用写。点击add key完成。
----
+
 
 **第七步 测试SSH** 
 
@@ -129,7 +130,7 @@ Are you sure you want to continue connecting (yes/no)?
 如果看到下面信息，就说明一切完美，大功告成！
 
 Hi username! You’ve successfully authenticated, but GitHub does not provide shell access.
----
+
 
 **第八步 建立自己网站** 
 
@@ -151,7 +152,7 @@ Hi username! You’ve successfully authenticated, but GitHub does not provide sh
 
 **到此为止，就建好你的网站了，这个时候打开你的网站http://linwenfang.github.io就可以看到你的主页了，是不是很激动！** 
 
----
+
 
 我的博客是参考的[Hux 黄玄](https://github.com/Huxpro/huxpro.github.io) ，大家也可以用他的程序进行自我修改，或者在github上搜索blog github，能搜出来很多模版。
 
