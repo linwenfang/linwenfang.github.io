@@ -15,7 +15,7 @@ tags:
 
 ## 前言
 
-Wendy 的 Blog 就这么开通了。
+Wendy 的 Blog 开通了！
 
 [跳过废话，直接看技术实现](#build) 
 
